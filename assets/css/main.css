@@ -47,6 +47,14 @@ a{
     text-decoration: none;
 }
 
+.csslink:visited{
+    color: pink;
+}
+
+.csslink:hover{
+    text-decoration: underline;
+}
+
 ul{
     list-style: none;
 }
@@ -471,6 +479,50 @@ body.light-theme{
     margin-bottom: 3rem;
 }
 
+/* Form */
+.form-title{
+    font-size: var(--font-size-sm);
+}
+
+input[type="radio"]{
+    margin: 0 25px 0 0;
+}
+
+input[type="checkbox"]{
+    margin: 0 25px 0 0;
+}
+
+.form-container{
+    padding: 2rem;
+    background-color: var(--secondary-background-color);
+}
+
+.form-section{
+    margin-bottom: 5rem;
+}
+
+.form-input{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--transparent-light-color);
+    border-radius: 5px;
+    font-size: var(--font-size-sm);
+}
+
+button[type="reset"]{
+    background-color: var(--transparent-light-color);
+    border: 1px solid var(--transparent-light-color);
+    color: var(--light-color);
+    font-size: var(--font-size-sm);
+}
+
+button[type="submit"]{
+    background-color: var(--transparent-light-color);
+    border: 1px solid var(--transparent-light-color);
+    color: var(--light-color);
+    font-size: var(--font-size-sm); 
+}
+
 /* Footer */
 .footer{
     background-color: var(--secondary-background-color);
@@ -600,6 +652,25 @@ body.light-theme{
     margin-top: auto;
     margin-bottom: 0;
 }
+
+table{
+    width: 60%;
+}
+
+th,caption{
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+table, th, td{
+    border: 1px solid var(--transparent-light-color);
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px;
+}
+
 
 /* Media queries */
 @media screen and (min-width: 700px) {

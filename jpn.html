@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,84 +11,85 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
+
 <body>
-   <!-- Header -->
-   <header class="header" id="header">
+    <!-- Header -->
+    <header class="header" id="header">
 
-    <nav class="navbar container">
-        <a href="./index.html">
-            <h2 class="logo">Discover BP</h2>
-        </a>
+        <nav class="navbar container">
+            <a href="./index.html">
+                <h2 class="logo">Discover BP</h2>
+            </a>
 
-        <div class="menu" id="menu">
-            <ul class="list">
-                <li class="list-item">
-                    <a href="./index.html" class="list-link current">Home</a>
-                </li>
-                <li class="list-item">
-                    <a href="./bpguide.html" class="list-link">City Guide</a>
-                </li>
-                <li class="list-item">
-                    <a href="./bar.html" class="list-link">Popular</a>
-                </li>
-                <li class="list-item">
-                    <a href="./index.html" class="list-link">News</a>
-                </li>
-                <li class="list-item">
-                    <a href="#bottom" class="list-link">About Us</a>
-                </li>
-                <li class="list-item screen-lg-hidden">
-                    <a href="#" class="list-link">Sign in</a>
-                </li>
-                <li class="list-item screen-lg-hidden">
-                    <a href="#" class="list-link">Sign up</a>
-                </li>
-            </ul>
+            <div class="menu" id="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="./index.html" class="list-link current">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./bpguide.html" class="list-link">City Guide</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./bar.html" class="list-link">Popular</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./index.html" class="list-link">News</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#bottom" class="list-link">About Us</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="#" class="list-link">Sign in</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="#" class="list-link">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="list list-right">
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+
+                <button class="btn place-items-center" id="search-icon">
+                    <i class="ri-search-line"></i>
+                </button>
+
+                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+
+                <a href="#" class="list-link screen-sm-hidden">Sign in</a>
+                <a href="#" class="btn sign-up-btn screen-sm-hidden">Sign up</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Search -->
+    <div class="search-form-container container" id="search-form-container">
+
+        <div class="form-container-inner">
+
+            <form action="index.html" class="form">
+                <input class="form-input" type="text" placeholder="Search">
+                <button class="btn form-btn" type="submit">
+                    <i class="ri-search-line"></i>
+                </button>
+            </form>
+            <span class="form-note">Press ESC to close.</span>
+
         </div>
 
-        <div class="list list-right">
-            <button class="btn place-items-center" id="theme-toggle-btn">
-                <i class="ri-sun-line sun-icon"></i>
-                <i class="ri-moon-line moon-icon"></i>
-            </button>
-
-            <button class="btn place-items-center" id="search-icon">
-                <i class="ri-search-line"></i>
-            </button>
-
-            <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
-                <i class="ri-menu-3-line open-menu-icon"></i>
-                <i class="ri-close-line close-menu-icon"></i>
-            </button>
-
-            <a href="./signin.html" class="list-link screen-sm-hidden">Sign in</a>
-            <a href="./signup.html" class="btn sign-up-btn screen-sm-hidden">Sign up</a>
-        </div>
-
-    </nav>
-
-</header>
-
-<!-- Search -->
-<div class="search-form-container container" id="search-form-container">
-
-    <div class="form-container-inner">
-
-        <form action="" class="form">
-            <input class="form-input" type="text" placeholder="Search">
-            <button class="btn form-btn" type="submit">
-                <i class="ri-search-line"></i>
-            </button>
-        </form>
-        <span class="form-note">Press ESC to close.</span>
+        <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </button>
 
     </div>
-
-    <button class="btn form-close-btn place-items-center" id="form-close-btn">
-        <i class="ri-close-line"></i>
-    </button>
-
-</div>
 
     <!-- Blog post -->
     <section class="blog-post section-header-offset">
@@ -130,6 +133,30 @@
                     A small restaurant which specializes in Okonomiyaki, Japan Okonomiyaki Kincsan is located on Raday street. It is a popular place for okonomiyaki, and the prices are great. The cooks prepare the dishes in front of the customers, and they are always friendly. If you are looking for an authentic Japanese spot to eat some okonomiyaki, try Japan Okonomiyaki Kincsan!
                 </p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1398.0056611838543!2d19.063073035201803!3d47.48809978448774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x85e27a3ea0e710f7!2sJapan%20Okonomiyaki%20Tatsu!5e0!3m2!1sen!2shu!4v1650913683766!5m2!1sen!2shu" width="900" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <table>
+                    <caption>Here's our ranking below!</caption>
+                    <tr>
+                        <th>Ranking</th>
+                        <th>Restaurant</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Komachi Bistro</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>DON DOKO DON</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>WAFU</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Japan Okonomiyaki Kincsan</td>
+                    </tr>
+                </table>
 
                 <p>We hope you were able to find a place you'd like to eat in someday. We are always happy to spread the love of Japanese cuisine!</p>
             </div>

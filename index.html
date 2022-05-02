@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +11,7 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header" id="header">
@@ -59,8 +62,8 @@
                     <i class="ri-close-line close-menu-icon"></i>
                 </button>
 
-                <a href="./signin.html" class="list-link screen-sm-hidden">Sign in</a>
-                <a href="./signup.html" class="btn sign-up-btn screen-sm-hidden">Sign up</a>
+                <a href="#" class="list-link screen-sm-hidden">Sign in</a>
+                <a href="#" class="btn sign-up-btn screen-sm-hidden">Sign up</a>
             </div>
 
         </nav>
@@ -72,7 +75,7 @@
 
         <div class="form-container-inner">
 
-            <form action="" class="form">
+            <form action="index.html" class="form">
                 <input class="form-input" type="text" placeholder="Search">
                 <button class="btn form-btn" type="submit">
                     <i class="ri-search-line"></i>
@@ -99,7 +102,9 @@
                     <h3 class="headline">
                         <span class="place-items-center">Today</span>
                     </h3>
-                    <span class="headline-description"><a href="https://www.cinemacity.hu/films/doctor-strange-az-orulet-multiverzumaban/4901d2r#/buy-tickets-by-film?for-movie=4901d2r&view-mode=list">Dr. Strange tickets NOW ON SALE in theatres</a></span>
+                    <span class="headline-description"><a
+                            href="https://www.cinemacity.hu/films/doctor-strange-az-orulet-multiverzumaban/4901d2r#/buy-tickets-by-film?for-movie=4901d2r&view-mode=list" class="csslink">Dr.
+                            Strange tickets NOW ON SALE in theatres</a></span>
                 </div>
 
                 <a href="./jpn.html" class="article featured-article featured-article-1">
@@ -148,13 +153,14 @@
                             <span>10 Min read</span>
                         </div>
 
-                        <h3 class="title article-title">Everything you need to know about getting around in Budapest</h3> 
+                        <h3 class="title article-title">Everything you need to know about getting around in Budapest
+                        </h3>
 
                     </div>
                 </a>
 
             </div>
-            
+
             <div class="sidebar d-grid">
 
                 <h3 class="title featured-content-title">News</h3>
@@ -181,7 +187,8 @@
                 <a href="./post.html" class="trending-news-box">
                     <div class="trending-news-img-box">
                         <span class="trending-number place-items-center">2.</span>
-                        <img src="./assets/images/trending/7ff5fadb10e0ad067fbbe0a51398122e.jpg" alt="" class="article-image">
+                        <img src="./assets/images/trending/7ff5fadb10e0ad067fbbe0a51398122e.jpg" alt=""
+                            class="article-image">
                     </div>
 
                     <div class="trending-news-data">
@@ -283,14 +290,16 @@
                     <img src="./assets/images/tags/szimpla_fekvo.jpg" alt="" class="article-image">
                 </a>
 
-                <a href="https://welovebudapest.com/en/article/2014/7/30/how-to-get-medical-care-in-budapest-emergencies-doctors-hospitals-and-more" class="article">
+                <a href="https://welovebudapest.com/en/article/2014/7/30/how-to-get-medical-care-in-budapest-emergencies-doctors-hospitals-and-more"
+                    class="article">
                     <span class="tag-name">Health</span>
                     <img src="./assets/images/tags/health-tag.jpg" alt="" class="article-image">
                 </a>
 
                 <a href="./post.html" class="article">
                     <span class="tag-name">Nature</span>
-                    <img src="./assets/images/tags/margaret-island-aerial-view-800x600.jpg" alt="" class="article-image">
+                    <img src="./assets/images/tags/margaret-island-aerial-view-800x600.jpg" alt=""
+                        class="article-image">
                 </a>
 
                 <a href="./post.html" class="article">
@@ -314,7 +323,7 @@
                 <h6 class="title newsletter-title">Subscribe to Discover BP</h6>
                 <p class="newsletter-description">Keep up with Budapest's latest</p>
 
-                <form action="" class="form">
+                <form action="index.html" class="form">
                     <input class="form-input" type="text" placeholder="Enter your email address">
                     <button class="btn form-btn" type="submit">
                         <i class="ri-mail-send-line"></i>
@@ -327,17 +336,56 @@
 
     </section>
 
+    <!-- Form -->
+    <section>
+        <div class="container">
+            <h2 class="title section-title" data-name="Form">Leave a review</h2>
+
+            <div class="form-container">
+                <form action="index.html" method="get" enctype="multipart/form-data">
+                    <div class="form-section">
+                        <h6 class="form-title">On a scale of 1-5, how informative was this website?</h6>
+                        1 <input type="radio" name="rating" id="rating1" />
+                        2 <input type="radio" name="rating" id="rating2" />
+                        3 <input type="radio" name="rating" id="rating3" />
+                        4 <input type="radio" name="rating" id="rating4" />
+                        5 <input type="radio" name="rating" id="rating5" />
+                    </div>
+
+                    <div class="form-section">
+                        <h6 class="form-title">What kind of content would you like to see next?</h6>
+                        <textarea class="form-input" name="comment" id="comment" cols="1" rows="2"></textarea>
+                    </div>
+
+                    <div class="form-section">
+                        <h6 class="form-title">Favorite parts of the website</h6>
+                        <label for="jpn">Japanese food</label>
+                        <input type="checkbox" id="jpn" name="jpn" />
+                        <label for="bar">Venues in BP</label>
+                        <input type="checkbox" id="bar" name="bar" />
+                        <label for="bpguide">Budapest guide</label>
+                        <input type="checkbox" id="bpguide" name="bpguide" />
+                    </div>
+
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer section">
 
         <div class="footer-container container d-grid">
-            
+
             <div class="company-data">
                 <a href="./index.html">
                     <h2 class="logo">Discover BP</h2>
                 </a>
-                <p class="company-description">Discover BP is the perfect virtual space for you to learn about the latest and greatest in the wonderful city of Budapest.</p>
-                
+                <p class="company-description">Discover BP is the perfect virtual space for you to learn about the
+                    latest and greatest in the wonderful city of Budapest.</p>
+
                 <ul class="list social-media">
                     <li class="list-item">
                         <a href="#" class="list-link"><i class="ri-instagram-line"></i></a>
@@ -358,7 +406,7 @@
 
             <div>
                 <h6 class="title footer-title">Categories</h6>
-                
+
                 <ul class="footer-list list">
                     <li class="list-item">
                         <a href="#" class="list-link">Travel</a>
@@ -384,7 +432,7 @@
 
             <div>
                 <h6 class="title footer-title">Useful links</h6>
-                
+
                 <ul class="footer-list list">
                     <li class="list-item">
                         <a href="#" class="list-link">Home</a>
@@ -407,7 +455,7 @@
 
             <div>
                 <h6 class="title footer-title">Company</h6>
-                
+
                 <ul class="footer-list list">
                     <li class="list-item">
                         <a href="#" class="list-link">Contact us</a>
@@ -429,11 +477,12 @@
             </div>
 
         </div>
-        
+
     </footer>
 
     <!-- JS -->
     <script src="./assets/js/main.js"></script>
     <div id="bottom"></div>
 </body>
+
 </html>
